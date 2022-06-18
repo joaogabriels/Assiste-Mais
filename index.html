@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Watch it</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+
+<body class="bg-dark">
+  <header>
+    <div class="text-center text-light">
+      <div class="d-flex p-2 flex-column justify-content-center align-items-center">
+        <h1 class="display-3 text-white">🎞 Watch it 🎬</h1>
+        <p class="h2 opacity-50">O melhor site de filmes</p>
+        <div class="w-75">
+          <input type="text" class="form-control" placeholder="Encontrar filmes" id="searchBar">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="mt-5 text-center text-white">
+    <h2>Filmes populares</h2>
+    <div class="container mt-2">
+      <div class="row" id="movie-container">
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-5">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="#" onclick="previousPage()">Página anterior</a>
+        </li>
+        <li class="page-item" id="page-li"></li>
+        <li class="page-item">
+          <a class="page-link" href="#" onclick="nextPage()">Próxima página</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
