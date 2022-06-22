@@ -18,8 +18,14 @@
       <div class="d-flex p-2 flex-column justify-content-center align-items-center">
         <h1 class="display-3 text-white">🎞 Watch it 🎬</h1>
         <p class="h2 opacity-50">O melhor site de filmes</p>
-        <div class="w-75">
-          <input type="text" class="form-control" placeholder="Encontrar filmes" id="searchBar">
+        <div class="w-75 d-flex">
+          <input type="text" class="form-control" placeholder="Encontrar filmes" id="textoPesquisa">
+          <button style="margin-left: 15px;" class="btn btn-light" id="btnPesquisa">Pesquisar</button>
+        </div>
+        <section>
+          <div class="p-5" id="pagina-pesquisa">
+          </div>
+        </section>
         </div>
       </div>
     </div>
@@ -48,6 +54,7 @@
   </section>
 
   <script src="./script.js"></script>
+  <script src="pesquisa.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
     crossorigin="anonymous"></script>
